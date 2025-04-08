@@ -1,18 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import TestApi from './Pages/TestApi';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RouterPage from "./routes/RouterPage";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const App = () => {
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/test" element={<TestApi />} />
-        </Routes>
-      </Router>
+    <Router>
+      <RouterPage />
+    </Router>
   );
 };
 
